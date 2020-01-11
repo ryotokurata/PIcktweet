@@ -33,7 +33,6 @@ class TweetsController < ApplicationController
   end
 
   def search
-    @tweet = Tweet.find(params[:id])
     @tweets = Tweet.search(params[:keyword])
   end
 
